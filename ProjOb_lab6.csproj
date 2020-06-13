@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9F752ED3-F4EB-4498-83F7-821E91A4A3E4}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>ProjOb_lab6</RootNamespace>
+    <AssemblyName>ProjOb_lab6</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Advertising Agency\GraphicalAdvertisingAgency.cs" />
+    <Compile Include="Advertising Agency\TextAdvertisingAgency.cs" />
+    <Compile Include="Concrete\Hotel.cs" />
+    <Compile Include="Interfaces, Abstracts\IAttraction.cs" />
+    <Compile Include="Interfaces, Abstracts\IAccomodation.cs" />
+    <Compile Include="Concrete\Offer.cs" />
+    <Compile Include="Concrete\Trip.cs" />
+    <Compile Include="Concrete\Attraction.cs" />
+    <Compile Include="DataAccess\Booking.cs" />
+    <Compile Include="DataAccess\Iterators\BookingDatabaseIterator.cs" />
+    <Compile Include="DataAccess\Iterators\OysteDatabaseIterator.cs" />
+    <Compile Include="DataAccess\Oyster.cs" />
+    <Compile Include="DataAccess\ShutterStock.cs" />
+    <Compile Include="DataAccess\Iterators\ShutterStockDatabaseIterator.cs" />
+    <Compile Include="DataAccess\TripAdvisor.cs" />
+    <Compile Include="DataAccess\Iterators\TripAdvisorDatabaseIterator.cs" />
+    <Compile Include="Decorators\FranceDecorator.cs" />
+    <Compile Include="Decorators\ItalyDecorator.cs" />
+    <Compile Include="Decorators\PolishDecorators.cs" />
+    <Compile Include="Init\BookingGenerator.cs" />
+    <Compile Include="Init\DBGeneratorUtils.cs" />
+    <Compile Include="Init\Init.cs" />
+    <Compile Include="Init\OysterGenerator.cs" />
+    <Compile Include="Init\ShutterStockGenerator.cs" />
+    <Compile Include="Init\TripAdvisorGenerator.cs" />
+    <Compile Include="Interfaces, Abstracts\IDataBase.cs" />
+    <Compile Include="Interfaces, Abstracts\IDatabasesIterator.cs" />
+    <Compile Include="Interfaces, Abstracts\IOfferWebsite.cs" />
+    <Compile Include="Interfaces, Abstracts\IPhoto.cs" />
+    <Compile Include="Interfaces, Abstracts\IReview.cs" />
+    <Compile Include="Interfaces, Abstracts\IAdvertisingAgency.cs" />
+    <Compile Include="Interfaces, Abstracts\ITravelAgency.cs" />
+    <Compile Include="Interfaces, Abstracts\IOffer.cs" />
+    <Compile Include="Interfaces, Abstracts\ITrip.cs" />
+    <Compile Include="Concrete\Review.cs" />
+    <Compile Include="Concrete\Photo.cs" />
+    <Compile Include="TravelAgencies\TravelAgency.cs" />
+    <Compile Include="Offer Websites\OfferWebsite.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Descrambling\Descrambler.cs" />
+    <Compile Include="Descrambling\DescramblerFactories.cs" />
+    <Compile Include="TravelAgencies\FranceTravel.cs" />
+    <Compile Include="TravelAgencies\ItalyTravel.cs" />
+    <Compile Include="TravelAgencies\PolandTravel.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
