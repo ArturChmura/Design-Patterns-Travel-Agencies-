@@ -1,7 +1,0 @@
-C:\Users\Artur\source\repos\ProjOb_lab6\obj\Debug\ProjOb_lab6.csprojAssemblyReference.cache
-C:\Users\Artur\source\repos\ProjOb_lab6\bin\Debug\ProjOb_lab6.exe.config
-C:\Users\Artur\source\repos\ProjOb_lab6\bin\Debug\ProjOb_lab6.exe
-C:\Users\Artur\source\repos\ProjOb_lab6\bin\Debug\ProjOb_lab6.pdb
-C:\Users\Artur\source\repos\ProjOb_lab6\obj\Debug\ProjOb_lab6.exe
-C:\Users\Artur\source\repos\ProjOb_lab6\obj\Debug\ProjOb_lab6.pdb
-C:\Users\Artur\source\repos\ProjOb_lab6\obj\Debug\ProjOb_lab6.csproj.CoreCompileInputs.cache
